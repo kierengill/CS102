@@ -1,0 +1,15 @@
+  public void Switch() {
+	int k=size;    
+	  data[k] = data[k-1];
+	  data[k-1] = data[0];
+	  data[0] = data[k];
+	  data[k] = null;
+  }
+  
+  public void Swap(int a, int b) throws IndexOutOfBoundsException {
+	  int k = size;
+	  data[k] = data[a];
+	  data[a] = data[b];
+	  data[b] = data[k];
+	  data[k] = null;
+  }
